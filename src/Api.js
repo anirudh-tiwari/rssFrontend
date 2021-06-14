@@ -1,7 +1,10 @@
 import fetchRequests from "./Fetch";
 const Api = {
-    getProduct: () => {
-        return fetchRequests.secured("product/get", 'GET');
+    // getFeed: () => {
+    //     return fetchRequests.secured("product/get", 'GET');
+    // },
+    getFeed: () => {
+        return fetchRequests.get("webScrapper/get");
     },
     getProductRedux: (id) => {
         return fetchRequests.secured(`product/redux?ID=${id}`, 'GET');
@@ -13,7 +16,11 @@ const Api = {
         return fetchRequests.get(`product/search?type=${search}`);
     },
     postFeed: (data) => {
-        return fetchRequests.secured(`otp/send`, data);
+        debugger
+        return fetchRequests.secured(`addLink/cre`, 'POST', data);
+    },
+    postOtp: (data) => {
+        return fetchRequests.post(`otp/send`, data);
     },
     verifyOtp: (data) => {
         return fetchRequests.post(`otp/verify`, data);
