@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Api from "../Api";
+import Typewriter from "typewriter-effect";
 
 function ShowBookmark() {
   const [bookmark, setBookmark] = useState([]);
@@ -11,12 +12,18 @@ function ShowBookmark() {
   }, []);
 
   return (
-    <div>
-      <h1>Bookmarks</h1>
-      {bookmark?.map((data) => {
+    <div className="bookmark">
+      <Typewriter
+        options={{
+          strings: ["Bookmarks 🔖"],
+          autoStart: true,
+          loop: true,
+        }}
+      />
+      {bookmark.map((data) => {
         return (
           <>
-            <div className="feedData">
+            <div className="bookmarkData">
               {data.articleLink} <br />
               <a href={data.articleName} target="_blank" class="button">
                 Read

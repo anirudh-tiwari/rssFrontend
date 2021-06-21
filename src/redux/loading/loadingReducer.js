@@ -1,19 +1,21 @@
 import { LoadingTrue, LoadingFalse } from "./loadingTypes";
 
 const loadingInitialState = {
-  value: false,
+  value: true,
+  displayElement: "none",
 };
 const loadingReducer = (state = loadingInitialState, action) => {
   switch (action.type) {
     case LoadingTrue:
       return {
         ...state,
-        value: true,
+        value: false,
+        displayElement: "block",
       };
     case LoadingFalse:
       return {
         ...state,
-        value: false,
+        value: true,
       };
     default:
       return state;

@@ -17,15 +17,12 @@ function Welcome() {
             loop: true,
           }}
         />
-        {/* <h1>
-          <strong>Welcome to the RSS Reader</strong>
-        </h1> */}
         <br />
-        <Link to="/about">
+        <Link to="/addfeed">
           <strong>Add More Subscription</strong>
         </Link>{" "}
         |
-        <Link to="/about">
+        <Link to="/showbookmark">
           <strong> Bookmarked</strong>
         </Link>
       </div>
