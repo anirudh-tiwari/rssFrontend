@@ -10,8 +10,8 @@ function Welcome() {
           options={{
             strings: [
               "Welcome to the RSS Reader 😍",
-              "Retrieve the latest headlines from your favorite sites 🔥",
-              "Download RSS Feeds from other sites to display the updated news here ✨",
+              "Retrieve latest headlines from your favorite site 🔥",
+              "Download RSS Feed from sites to display news here✨",
             ],
             autoStart: true,
             loop: true,

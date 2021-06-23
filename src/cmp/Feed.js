@@ -15,7 +15,8 @@ function Feed() {
       {loading && <Loader />}
       <div style={{ display: displayElements }}>
         <Welcome />
-        <div className="gridLayout">
+        {/* <div className="gridLayout"> */}
+        <div>
           <div>
             <GetFeed changeIds={setSelectedLink} />
           </div>

@@ -13,13 +13,15 @@ function ShowBookmark() {
 
   return (
     <div className="bookmark">
-      <Typewriter
-        options={{
-          strings: ["Bookmarks 🔖"],
-          autoStart: true,
-          loop: true,
-        }}
-      />
+      <div className="bookmarkStyles">
+        <Typewriter
+          options={{
+            strings: ["Bookmarks 🔖"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
+      </div>
       {bookmark.map((data) => {
         return (
           <>

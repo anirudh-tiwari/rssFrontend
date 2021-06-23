@@ -4,7 +4,7 @@ const Api = {
   //     return fetchRequests.secured("product/get", 'GET');
   // },
   getFeedTitle: () => {
-    return fetchRequests.get("getTitle/get");
+    return fetchRequests.secured("getTitle/get", "GET");
   },
   getFeedData: (id) => {
     return fetchRequests.get(`webScrapper/get?id=${id}`);

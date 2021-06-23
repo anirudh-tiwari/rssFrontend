@@ -22,7 +22,6 @@ function FeedData(props) {
   }, [props]);
 
   const bookmark = (articleLink, articleName) => {
-    debugger;
     const data = {
       articleLink,
       articleName,
@@ -54,7 +53,7 @@ function FeedData(props) {
           );
         })}
       </div>
-      {popupState ? <Popup /> : null}
+      {popupState ? <Popup color="success" message="Bookmark Added" /> : null}
     </>
   );
 }

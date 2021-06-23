@@ -9,8 +9,7 @@ function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-const Popup = () => {
-  debugger;
+const Popup = (props) => {
   const [openElement, setOpenElement] = useState(false);
   // const dispatch = useDispatch()
   // const snackbarDataOpen = useSelector(state => state.snackbar.open)
@@ -23,7 +22,6 @@ const Popup = () => {
   };
 
   useEffect(() => {
-    debugger;
     setOpenElement(true);
   }, []);
 
@@ -34,8 +32,8 @@ const Popup = () => {
         autoHideDuration={2000}
         onClose={handleClose}
       >
-        <Alert onClose={handleClose} severity="success">
-          Bookmark Added
+        <Alert onClose={handleClose} severity={props.color}>
+          {props.message}
         </Alert>
       </Snackbar>
     </div>
