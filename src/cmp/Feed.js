@@ -15,7 +15,9 @@ function Feed() {
       {loading && <Loader />}
       <div style={{ display: displayElements }}>
         <Welcome />
-        {/* <div className="gridLayout"> */}
+        {/* {selectedLink == null ? (
+          <h1>YO YO YO</h1>
+        ) : ( */}
         <div>
           <div>
             <GetFeed changeIds={setSelectedLink} />
@@ -24,6 +26,7 @@ function Feed() {
             <FeedData selectedLink={selectedLink} />
           </div>
         </div>
+        {/* )} */}
       </div>
     </>
   );

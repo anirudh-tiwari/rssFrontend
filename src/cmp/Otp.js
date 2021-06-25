@@ -13,6 +13,7 @@ export default function Otp() {
       mobile_number,
     };
     Api.postOtp(data).then((response) => {
+      debugger;
       history.push({
         pathname: "/verify",
         state: {

@@ -1,4 +1,4 @@
-const base_url = "http://192.168.1.3:8000/";
+const base_url = "http://192.168.1.7:8000/";
 // const base_url = "http://localhost:8000/";
 // export const base_url = "https://admin.kavishala.in";
 

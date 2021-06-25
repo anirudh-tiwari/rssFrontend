@@ -11,6 +11,52 @@
   position: relative;
 }
 
+@media (max-width: 393px) {
+  .box {
+    width: 390px !important;
+  }
+}
+
+@media (max-width: 414px) {
+  .emptyDataButton {
+    margin-left: 70px !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .emptyDataButton {
+    margin-left: 60px !important;
+  }
+}
+.emptyDataButton {
+  width: 447px !important;
+  border: 1px solid #28a745;
+  padding: 6px 99px;
+  margin-left: 455px;
+  color: white;
+  background-color: #28a745;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.emptyDataButton:hover {
+  color: white !important;
+  border: 1px solid black;
+  background-color: black;
+}
+
+@media (max-width: 393px) {
+  .emptyDataTitle {
+    font-size: 24px !important;
+  }
+}
+
+.emptyDataTitle {
+  text-align: center;
+  font-weight: 600;
+  color: red;
+}
 .box {
   width: 400px;
   position: absolute;
@@ -100,6 +146,18 @@
   text-decoration: none;
 }
 
+@media (max-width: 414px) {
+  .feedData {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .feedData {
+    font-size: 21px !important;
+  }
+}
+
 .feedData {
   color: #1d1919;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -111,7 +169,7 @@
   margin-right: 15px;
 }
 .feedData:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 50%);
 }
 
 .button {
@@ -180,6 +238,27 @@
   padding: 10px;
 }
 
+@media (max-width: 414px) {
+  .sideNavTitle {
+    font-size: 27px !important;
+    padding-left: 13px !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .sideNavTitle {
+    font-size: 25px !important;
+    padding-left: 6px !important;
+  }
+}
+
+.sideNavTitle {
+  font-size: 30px;
+  padding-left: 15px;
+  color: #ff0004;
+  font-weight: 600;
+}
+
 @media (max-width: 393px) {
   .Typewriter__wrapper {
     font-size: 19px !important;
@@ -192,6 +271,12 @@
 }
 
 @media (max-width: 393px) {
+  .Typewriter {
+    height: 120px !important;
+  }
+}
+
+@media (max-width: 414px) {
   .Typewriter {
     height: 120px !important;
   }
@@ -246,6 +331,18 @@ a:hover {
   text-decoration: none !important;
 }
 
+@media (max-width: 414px) {
+  .feedData {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .feedData {
+    font-size: 21px !important;
+  }
+}
+
 .bookmarkData {
   color: #1d1919;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -264,6 +361,7 @@ a:hover {
 .bookmark .Typewriter {
   text-align: center !important;
   margin: 12px !important;
+  height: 90px !important;
 }
 
 .MuiAlert-filledSuccess {
@@ -385,8 +483,19 @@ a:hover {
   transition: all 0.5s;
 }
 
+@media (max-width: 414px) {
+  .activeNavBar {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .activeNavBar {
+    width: 50% !important;
+  }
+}
+
 .activeNavBar {
-  /* width: 0; */
   width: 250px;
 }
 
@@ -408,4 +517,21 @@ a:hover {
   font-size: 49px !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.bookmarkContainer {
+  position: relative;
+}
+
+@media (max-width: 360px) {
+  .emptyBookmarkTitle {
+    font-size: 30px !important;
+  }
+}
+
+.emptyBookmarkTitle {
+  position: absolute;
+  top: 200px;
+  color: red;
+  font-weight: 600;
 }
